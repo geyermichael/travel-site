@@ -22,7 +22,7 @@ module.exports = {
         contentBase: path.join(__dirname, 'app'),
         hot: true, // hot reload allowed
         host: '0.0.0.0', // for network access
-        port: 3000
+        port: 8000
     },
     mode: 'development',
     // watch: true,
