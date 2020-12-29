@@ -1,12 +1,12 @@
-import MobileMenu from './modules/MobileMenu'
-
-// import the main style
 import '../styles/styles.css'
+import MobileMenu from './modules/MobileMenu'
+import RevealOnScroll from './modules/RevealOnScroll'
 
+new RevealOnScroll(document.querySelectorAll(".feature-item"), 75)
+new RevealOnScroll(document.querySelectorAll(".testimonial"), 60)
 
 let mobileMenu = new MobileMenu();
 
-// accept hot reload by webpack server
 if (module.hot) {
-    module.hot.accept()
+  module.hot.accept()
 }
